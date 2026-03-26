@@ -37,10 +37,12 @@
     "@inquirer/input": "^5.0.0",
     "@inquirer/select": "^5.1.0",
     "chokidar": "^4.0.0",
-    "yaml": "^2.6.0",
-    "ws": "^8.18.0"
+    "ws": "^8.18.0",
+    "yaml": "^2.6.0"
   },
   "devDependencies": {
-    "eslint": "^10.0.3"
+    "@eslint/js": "^10.0.1",
+    "eslint": "^10.0.3",
+    "globals": "^17.4.0"
   }
 }
