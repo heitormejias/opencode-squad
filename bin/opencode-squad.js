@@ -16,6 +16,18 @@ const targetDir = process.cwd();
 const t = (key) => i18n(getLocale(), key);
 
 async function main() {
+  if (command === '--help' || command === '-h' || command === 'help') {
+    showHelp();
+    return;
+  }
+
+  if (command === '--version' || command === '-v') {
+    const { readFileSync } = await import('fs');
+    const pkg = JSON.parse(readFileSync(new URL('../package.json', import.meta.url), 'utf-8'));
+    console.log(`opencode-squad v${pkg.version}`);
+    return;
+  }
+
   switch (command) {
     case 'init':
       await init(targetDir);
