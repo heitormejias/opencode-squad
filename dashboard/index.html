@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OpenCode Squad - Virtual Office</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="app">
+    <header>
+      <h1>🏢 OpenCode Squad Virtual Office</h1>
+      <div class="connection-status">
+        <span id="status-indicator" class="status disconnected"></span>
+        <span id="status-text">Disconnected</span>
+      </div>
+    </header>
+
+    <main>
+      <div class="squad-selector">
+        <label for="squad-select">Select Squad:</label>
+        <select id="squad-select">
+          <option value="">-- Select a squad --</option>
+        </select>
+      </div>
+
+      <div id="office" class="office">
+        <div class="agents-container" id="agents-container">
+          <!-- Agents will be rendered here -->
+        </div>
+        <div id="handoff-area" class="handoff-area">
+          <div id="handoff-message" class="handoff-message hidden"></div>
+        </div>
+      </div>
+
+      <div class="status-panel">
+        <h2>Execution Status</h2>
+        <div id="status-details" class="status-details">
+          <p class="no-squad">Select a squad to view status</p>
+        </div>
+      </div>
+
+      <div class="log-panel">
+        <h2>Activity Log</h2>
+        <div id="activity-log" class="activity-log">
+          <p class="no-activity">Waiting for activity...</p>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>
