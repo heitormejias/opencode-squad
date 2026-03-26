@@ -1,5 +1,4 @@
 import { i18n, getLocale } from './i18n.js';
-import { listSquads } from './list.js';
 
 const t = (key) => i18n(getLocale(), key);
 

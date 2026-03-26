@@ -1,4 +1,4 @@
-import { locales } from './en.js';
+import { locales } from './locales/en.js';
 
 export function setLocale(locale) {
   if (locales[locale]) {
